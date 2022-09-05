@@ -6,13 +6,13 @@
 
 using namespace std;
 
-#define num_threads 16
+#define num_threads 16					//using openmpi lib, this is define of num of threads
 
 //=================To solve this pde equation: \frac{\partial^2\phi}{\partial t^2}-\frac{\partial^2\phi}{\partial r^2}-\frac{D-1}{r}\frac{\partial\phi}{\partial r}+\frac{\partial\phi}{\partial r}=0
 
 //=================Input parameters(global variable)
 const double R=128;					//calculate space
-const int zoombeta=2;					//
+const int zoombeta=2;					//zoom or precision parameter, 1->have 256 grids, 2->habe 512 grids potin 
 const int sz=256*zoombeta;				//number of cells
 const double dr=R/sz;				//length of cells
 const double cfl=0.01;				//value of dt/dx
@@ -21,20 +21,20 @@ const double tnum=4*2*pow(10,9)*zoombeta;	//number of time step
 const double tlength=tnum*dt;		//length of time
 const double Dim=2;					//dimention
 const double g=0.72;					//phi6 coefficient
-const double A=1;					//intial Configuration A
+const double A=1;					//intial Configuration A, can be changed
 const double a=81;					//intial Configuration a
 const double sigma=90;				//intial Configuration sigma
 const double peroid=10000*zoombeta;		//output peroid
 const double pi=3.1415926535898;	//const pi
 double potenial(double phi)
 {
-	return(0.5*(phi*phi-phi*phi*phi*phi+g*phi*phi*phi*phi*phi*phi));
+	return(0.5*(phi*phi-phi*phi*phi*phi+g*phi*phi*phi*phi*phi*phi));	//self define function to calculate potential
 }
-double pdpotenial(double phi)
+double pdpotenial(double phi)							//self define function to calculate derivative potential
 {
 	return(1.0*phi-2.0*phi*phi*phi+3.0*g*phi*phi*phi*phi*phi);
 }
-int myabs(int i)
+int myabs(int i)				//special abs function, which is used since the first grids r=0.5*dr, not r=1.0*dr
 {
 	if(i>=0)
 	{
@@ -234,7 +234,7 @@ int main(int argc, char *argv[])
 	initialize(phi,pdtphi,r);
 	outputr(r);
 	
-	//----------------------calculate
+	//----------------------calculate				//use rk4 method
 	
 	for(int j=0;j<=tnum;j++)				//time step calculating
 	{
