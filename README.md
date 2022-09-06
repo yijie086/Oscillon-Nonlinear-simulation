@@ -68,6 +68,8 @@ In this way, the program will be initialized with the input `**flag.dat` file an
 
 ``R``: Computational domain.
 
+``calR``: A optional total energy calculate domain, see section5-`energy.dat`.
+
 ``zoombeta``: Presicion parameter, the higher, the smaller the ``dr``
 
 ``sz``: Number of grids.
@@ -108,7 +110,7 @@ The program uses the rk4 (Runge–Kutta 4th-order) method to simulate the $\phi$
 
 ### 5.Output File
 
-``energy.dat``: This file outputs the total energy, the first column outputs the time, the second column outputs the full computational domain total energy, and the third column outputs the total energy in the $r$<`calR` space.
+``energy.dat``: This file outputs the total energy, the first column outputs the time, the second column outputs the full computational domain total energy, and the third column outputs the total energy in the $r<$`calR` space.
 
 ``r.dat``: This file outputs the position $r$ of all grid points.
 
@@ -124,4 +126,4 @@ The program uses the rk4 (Runge–Kutta 4th-order) method to simulate the $\phi$
 
 ``rT.dat``: This file outputs the position $r$ of the grid points which will output peroid of those points.
 
-``T.dat``:
+``T.dat``: This file outputs the $\phi$ field period corresponding to the points in the `rT.dat` file.
