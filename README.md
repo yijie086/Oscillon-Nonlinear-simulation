@@ -22,6 +22,12 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ### 1.Initial Setup and Background Introduce
 
+ From the modern, prevailing point of view of effective field theory, such a theory in $d$ dimensions is given by the action
+$$
+S=\int \d^{d+1}\tilde{x}\bigg( & -\frac{1}{2}\partial_\mu\varphi \partial^\mu\varphi- \frac{1}{2}m^2\varphi^2+\lambda\varphi^4- {g}_0 \varphi^6  +  g_1 \varphi^8  + g_2 (\pd_\mu\varphi\pd^\mu \varphi)^2 +\cdots
+\bigg),
+$$
+
 ### 2.Input parameters
 
 ``R``: Computational domain.
