@@ -24,19 +24,34 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ### 2.Input parameters
 
-``R``: Compute Domain.
-``zoombeta``
-``sz``
-``dr``
-``cfl``
-``dt``
-``tnum``
-``tlength``
-``Dim``
-``g``
-``A``
-``a``
-``sigma``
-``peroid``
-``pi``
-``numofrT``
+``R``: Computational domain.
+
+``zoombeta``: Presicion parameter, the higher, the smaller the dr
+
+``sz``: Number of grids.
+
+``dr``: Space step.
+
+``cfl``: dt/dr.
+
+``dt``: Time step.
+
+``tnum``: Number of step.
+
+``tlength``: Total compute time length;
+
+``Dim``: Compute domain dimension.
+
+``g``: Potential parameter.
+
+``A``: Intial condition setup parameter.
+
+``a``: Intial condition setup parameter.
+
+``sigma``: Intial condition setup parameter.
+
+``peroid``: Output peroid, when ``timestep/peroid``=``ceil(timestep/peroid)``, run output function. (NOT THE PEROID OF FIELD!!!!!!!)
+
+``pi``: Yes, it is pi.
+
+``numofrT``: Evenly set ``numofrT`` points in the computational domain to output the field period of the points.
