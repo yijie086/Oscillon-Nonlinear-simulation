@@ -26,13 +26,13 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ``R``: Computational domain.
 
-``zoombeta``: Presicion parameter, the higher, the smaller the dr
+``zoombeta``: Presicion parameter, the higher, the smaller the ``dr``
 
 ``sz``: Number of grids.
 
 ``dr``: Space step.
 
-``cfl``: dt/dr.
+``cfl``: ``dt``/``dr``.
 
 ``dt``: Time step.
 
