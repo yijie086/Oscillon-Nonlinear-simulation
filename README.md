@@ -118,10 +118,10 @@ The program uses the rk4 (Runge–Kutta 4th-order) method to simulate the $\phi$
 
 ``phi.dat``: This file outputs the field $\phi$ value on all grids, the first column of each row outputs the time, and thereafter the field $\phi$ value at that time point.
 
-``pdtphiflag.dat``: This file outputs the breakpoint file of $\phi$, and the breakpoint file can be used to continue the calculation in the next calculation.
+``pdtphiflag.dat``: This file outputs the breakpoint file of $\phi$, and the breakpoint file can be used to continue the calculation in the next calculation. The output format is the same as `phi.dat` but without the first column which outputs time.
 
-``phiflag.dat``: This file outputs the breakpoint file of $\partial_t \phi$, and the breakpoint file can be used to continue the calculation in the next calculation.
+``phiflag.dat``: This file outputs the breakpoint file of $\phi$, and the breakpoint file can be used to continue the calculation in the next calculation. The output format is the same as `pdtphi.dat` but without the first column which outputs time.
 
-``rT.dat``:
+``rT.dat``: This file outputs the position $r$ of the grid points which will output peroid of those points.
 
 ``T.dat``:
