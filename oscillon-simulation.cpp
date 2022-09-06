@@ -12,8 +12,8 @@ using namespace std;
 
 //=================Input parameters(global variable)
 const double R=128;					//calculate space
-const double calR=20;
-const int zoombeta=2;					//
+const double calR=20;					//calculate energy inside this R
+const int zoombeta=2;					//precision parameters, for example 1->dr=1.0*dr 2->dr=0.5*dr
 const int sz=256*zoombeta;				//number of cells
 const double dr=R/sz;				//length of cells
 const double cfl=0.01;				//value of dt/dx
@@ -28,15 +28,15 @@ const double sigma=90;				//intial Configuration sigma
 const double peroid=10000*zoombeta;		//output peroid
 const double pi=3.1415926535898;	//const pi
 const int numofrT=16;				//number of peroid beacon
-double potenial(double phi)
+double potenial(double phi)		//calculate potential V
 {
 	return(0.5*(phi*phi-phi*phi*phi*phi+g*phi*phi*phi*phi*phi*phi));
 }
-double pdpotenial(double phi)
+double pdpotenial(double phi)		//calculate dV/d\phi
 {
 	return(1.0*phi-2.0*phi*phi*phi+3.0*g*phi*phi*phi*phi*phi);
 }
-int myabs(int i)
+int myabs(int i)			//special abs function, since the first element in a vector represent r=0.5*dr, not r=1.0*dr
 {
 	if(i>=0)
 	{
@@ -146,7 +146,7 @@ void outputr(double *r)								//output r
 	
 	phifile.close();	
 }
-void outputrT(double *rT)
+void outputrT(double *rT)					//output the r where will have a T.dat out put
 {
 	ofstream phifile;
 	phifile.open("rT.dat",ios::out);
@@ -253,7 +253,7 @@ void peroidcal(double *phi,double *tempTphi,int j,double *tempT1,double *tempT2,
 		}
 	}
 }
-void outputperoid(double j,double *T,double peroid)
+void outputperoid(double j,double *T,double peroid)	//output peroid
 {
 	if(ceil(j/peroid)==(j/peroid))
 	{
