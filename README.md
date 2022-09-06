@@ -22,11 +22,11 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ### 1.Initial Setup and Background Introduce
 
- From the modern, prevailing point of view of effective field theory, such a theory in $d$ dimensions is given by the action
-$$
-S=\int \d^{d+1}\tilde{x}\bigg( & -\frac{1}{2}\partial_\mu\varphi \partial^\mu\varphi- \frac{1}{2}m^2\varphi^2+\lambda\varphi^4- {g}_0 \varphi^6  +  g_1 \varphi^8  + g_2 (\pd_\mu\varphi\pd^\mu \varphi)^2 +\cdots
-\bigg),
-$$
+The action of the oscillon we focus on can be written as
+\begin{equation}
+S_6=\f{m}{2\li}\int \d^{3}x\;{\cal L} \equiv \f{m}{2\li}\int \d^{3}x\(-\frac{1}{2}\partial_\mu\phi \partial^\mu\phi-\frac{1}{2}\phi^2+\frac{1}{2}\phi^4-\frac{1}{2}g\phi^6\).
+\label{action}
+\end{equation}	
 
 ### 2.Input parameters
 
