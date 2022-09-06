@@ -24,7 +24,7 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ### 2.Input parameters
 
-``R``
+``R``: Compute Domain.
 ``zoombeta``
 ``sz``
 ``dr``
