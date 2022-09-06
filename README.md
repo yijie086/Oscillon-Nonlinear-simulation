@@ -14,4 +14,4 @@ then run:
 
 ```./a.out```
 
-the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``phi.dat`` and ``r.dat``.
+the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphiflag.dat``, ``phi.dat``, ``phiflag.dat``, ``r.dat``, ``rT.dat`` and ``T.dat``.
