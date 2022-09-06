@@ -350,17 +350,6 @@ int main(int argc, char *argv[])
 		outputpdrphi(j,pdrphi,peroid);									//output pdrphi
 		outputenergy(j,energycal(r,dr,phi,pdtphi,pdrphi),energycallim(r,dr,phi,pdtphi,pdrphi),peroid);		//output energy
 		outputperoid(j,T,peroid);										//output peroid
-//-------------------Euler step
-/*		#pragma omp parallel
-		{
-			#pragma omp for
-				for(int i=0;i<=sz;i++)
-				{
-					phi[i]=phi[i]+pdtphi[i]*dt+0.5*pd2tphi[i]*dt*dt;
-					pdtphi[i]=pdtphi[i]+pd2tphi[i]*dt;
-				}								//one time step
-		}
-*/
 //-------------------rk4
 		#pragma omp parallel
 		{
