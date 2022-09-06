@@ -2,6 +2,8 @@
 
 This program is dedicated to efficient parallel computing simulation of spherically symmetric oscillon.
 
+## Quick Start
+
 To run this program, install the openmpi library and execute the following command:
 
 ```g++ -fopenmp g72.cpp```
