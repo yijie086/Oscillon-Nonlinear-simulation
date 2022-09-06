@@ -17,3 +17,26 @@ then run:
 ```./a.out```
 
 the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphiflag.dat``, ``phi.dat``, ``phiflag.dat``, ``r.dat``, ``rT.dat`` and ``T.dat``.
+
+## Details
+
+### 1.Initial Setup and Background Introduce
+
+### 2.Input parameters
+
+``R``
+``zoombeta``
+``sz``
+``dr``
+``cfl``
+``dt``
+``tnum``
+``tlength``
+``Dim``
+``g``
+``A``
+``a``
+``sigma``
+``peroid``
+``pi``
+``numofrT``
