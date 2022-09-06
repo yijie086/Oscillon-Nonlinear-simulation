@@ -20,7 +20,9 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ## Details
 
-### 1.Initial Setup and Background Introduce
+### 1.Background Introduce and Intial Setup
+
+#### Bacground (For more detials, please see arxiv:******* )
 
 The action of the oscillon we focus on can be written as:
 
@@ -34,7 +36,25 @@ $$
 \ddot\phi- \nabla^2 \phi +\phi -2\phi^3+3g\phi^5=0.
 $$
 
-This code sets grids on `r=(i+0.5)*dr`, where $i=[0,sz]$
+#### Initialize
+
+This code sets grids on `r=(i+0.5)*dr`, where `i=[0,sz]` to avoid the singularity at `r=0`.
+
+If does not have `phiflag.dat` and `pdtphiflag.dat` files, please set the code line 322-323 to be:
+
+```
+	initialize(phi,pdtphi,r);
+	//continue_initialize(phi,pdtphi);
+```
+
+Intial condition is setted to be:
+
+$$
+\phi=Ae^{-\frac{(r^2-a)^2}{\sigma^2}},\ \partial_t\phi=0.
+$$
+
+This is an empirically easy initial condition for oscillon formation of cascading levels.
+
 
 ### 2.Input parameters
 
