@@ -52,6 +52,6 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ``peroid``: Output peroid, when ``timestep/peroid``=``ceil(timestep/peroid)``, run output function. (NOT THE PEROID OF FIELD!!!!!!!)
 
-``pi``: Yes, it is pi.
+``pi``: Yes, it is $\pi$.
 
 ``numofrT``: Evenly set ``numofrT`` points in the computational domain to output the field period of the points.
