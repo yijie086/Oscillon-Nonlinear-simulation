@@ -34,6 +34,8 @@ $$
 \ddot\phi- \nabla^2 \phi +\phi -2\phi^3+3g\phi^5=0.
 $$
 
+This code sets grids on``r``=`(i+0.5)*dr`
+
 ### 2.Input parameters
 
 ``R``: Computational domain.
