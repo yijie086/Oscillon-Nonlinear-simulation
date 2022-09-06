@@ -28,6 +28,12 @@ $$
 S_6=\int d^{3}x\(-\frac{1}{2}\partial_\mu\phi \partial^\mu\phi-\frac{1}{2}\phi^2+\frac{1}{2}\phi^4-\frac{1}{2}g\phi^6\).
 $$
 
+Then the EoM becomes:
+
+$$
+\ddot\phi- \nabla^2 \phi +\phi -2\phi^3+3g\phi^5=0.
+$$
+
 ### 2.Input parameters
 
 ``R``: Computational domain.
