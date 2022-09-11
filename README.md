@@ -6,11 +6,11 @@ This program is dedicated to efficient parallel computing simulation of spherica
 
 To run this program, install the openmpi library and execute the following command:
 
-```g++ -fopenmp g72.cpp```
+```g++ -fopenmp oscillon-simulation.cpp```
 
 or on mac, please try:
 
-```g++11 -fopenmp g72.cpp```
+```g++11 -fopenmp oscillon-simulation.cpp```
 
 then run:
 
