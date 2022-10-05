@@ -10,7 +10,7 @@ To run this program, install the openmpi library and execute the following comma
 
 or on mac, please try:
 
-```g++11 -fopenmp oscillon-simulation.cpp```
+```g++-12 -fopenmp oscillon-simulation.cpp```
 
 then run:
 
