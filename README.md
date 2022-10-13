@@ -22,7 +22,7 @@ the output file include ``energy.dat``, ``pdrphi.dat``, ``pdtphi.dat``, ``pdtphi
 
 ### 1.Background Introduce and Intial Setup
 
-#### Bacground (For more detials, please see arxiv:******* )
+#### Bacground (For more detials, please see https://arxiv.org/abs/2210.04969 )
 
 The action of the oscillon we focus on can be written as:
 
@@ -102,7 +102,7 @@ In this way, the program will be initialized with the input `**flag.dat` file an
 
 ### 3.Absorb Boundary Conditions
 
-This code use absorb boundary conditions to simulate a single oscillon. For more detials see arxiv:****.
+This code use absorb boundary conditions to simulate a single oscillon. For more detials see https://arxiv.org/abs/2210.04969
 
 ### 4.Computing
 
